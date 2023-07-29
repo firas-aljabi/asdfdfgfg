@@ -14,7 +14,7 @@ function PreLoader() {
     preLoaderAnim();
   }, []);
   return (
-    <div className="preloader  flex-col relative ">
+    <div className="preloader h-screen  flex-col relative ">
       <div className=" absolute top-5 left-5">
         <img src={Logo} alt="" className=" w-32" />
       </div>
