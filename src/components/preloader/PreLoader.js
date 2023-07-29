@@ -8,8 +8,6 @@ import Z from "../../assets/z.png";
 import E from "../../assets/e.png";
 import Logo from "../../assets/a1 1.png";
 import Photo from "../../assets/preload.png";
-import Sound from "../../assets/Skillet - Whispers in the Dark (320).mp3";
-import useSound from "use-sound";
 
 function PreLoader() {
   useEffect(() => {
@@ -20,9 +18,9 @@ function PreLoader() {
       <div className=" absolute top-5 left-5">
         <img src={Logo} alt="" className=" w-32" />
       </div>
-      <div className=" absolute top-5 right-0">
+      {/* <div className=" absolute top-5 right-0">
         <img src={Photo} alt="" className=" w-72" />
-      </div>
+      </div> */}
       <div className="texts-container ">
         <span>
           <img src={O} alt="" className="w-36" />

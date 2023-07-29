@@ -11,7 +11,7 @@ import Suchi from "../assets/suchiBack2.png";
 function ProductDetails() {
   const { id } = useParams();
 
-  const api_url = "https://fakestoreapi.com/products";
+  const api_url = "https://api.oryze.gomaplus.tech/api/show_product";
   const [product, setProduct] = useState({});
   const params = useParams();
   console.log(params);
@@ -20,6 +20,7 @@ function ProductDetails() {
       .then((res) => res.json())
       .then((product) => setProduct(product));
   }, []);
+  const item = product.data;
   return (
     <div className="mx-auto max-w-5xl  bg-[#2D2727] py-4 ">
       <div className="flex items-center justify-between text-[#D0B8A8]">
@@ -35,7 +36,7 @@ function ProductDetails() {
       </div>
       <div className=" flex  bg-[#2D2727]  ">
         <img
-          src={product.image}
+          src={item.image}
           alt="img"
           className=" w-2/4 max-h-96  hover:scale-110 duration-300 ease-in-out rounded-lg shadow-xl shadow-stone-900 mx-auto object-cover object-center"
         />
