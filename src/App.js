@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <PreLoader />
-      <div className="App bg-[#2D2727]">
+      <div className="App bg-[#2F2424]">
         <Routers />
       </div>
     </>

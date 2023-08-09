@@ -8,12 +8,12 @@ const tl = gsap.timeline();
 export const preLoaderAnim = () => {
   tl.to("body", {
     duration: 0.1,
-    css: { overflowY: "hidden" },
+    css: { overflowY: "scroll" },
     ease: "power3.inOut",
   })
     .to(".landing", {
       duration: 0.05,
-      css: { overflowY: "hidden", height: "90vh" },
+      css: { overflowY: "scroll", height: "90vh" },
     })
     .to(".texts-container", {
       duration: 0,
@@ -21,8 +21,43 @@ export const preLoaderAnim = () => {
       ease: "Power3.easeOut",
     })
     .from(".texts-container span", {
-      duration: 1.5,
-      delay: 1,
+      duration: 0.3,
+      y: 70,
+      skewY: 10,
+      stagger: 0.4,
+      ease: "Power3.easeOut",
+    })
+    
+    .from(".a4", {
+      duration: 0.001,
+      y: 70,
+      skewY: 10,
+      stagger: 0.4,
+      ease: "Power3.easeOut",
+    })
+    .from(".a3", {
+      duration: 0.2,
+      y: 70,
+      skewY: 10,
+      stagger: 0.4,
+      ease: "Power3.easeOut",
+    })
+    .from(".a2", {
+      duration: 0.2,
+      y: 70,
+      skewY: 10,
+      stagger: 0.4,
+      ease: "Power3.easeOut",
+    })
+    .from(".a1", {
+      duration: 0.2,
+      y: 70,
+      skewY: 10,
+      stagger: 0.4,
+      ease: "Power3.easeOut",
+    })
+    .from(".a5", {
+      duration: 0.2,
       y: 70,
       skewY: 10,
       stagger: 0.4,
@@ -38,7 +73,7 @@ export const preLoaderAnim = () => {
 
     .to(".landing", {
       duration: 0.05,
-      css: { overflowY: "hidden", height: "unset" },
+      css: { overflowY: "scroll", height: "unset" },
     })
     .to("body", {
       duration: 0.1,
@@ -105,7 +140,7 @@ export const openMenu = () => {
   const tl = gsap.timeline();
   tl.to("body", {
     duration: 0.1,
-    css: { overflowY: "hidden" },
+    css: { overflowY: "scroll" },
     ease: "power3.out",
   })
     .to(".hamburger-menu", {

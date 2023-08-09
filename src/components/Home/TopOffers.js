@@ -44,7 +44,7 @@ function TopOffers() {
               <img
                 src={offer.Image}
                 alt={`Offer ${offer.id}`}
-                className="opacity-70 rounded-lg max-h-28 sm:max-h-44 md:max-h-64 w-full object-cover"
+                className="opacity-70 rounded-lg max-h-28 sm:max-h-36 md:max-h-42 w-full object-cover"
               />
             </div>
           </SwiperSlide>

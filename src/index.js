@@ -6,8 +6,11 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import ErrorBoundary from "./ErrorBoundary";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  <ErrorBoundary>
+
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
@@ -15,6 +18,8 @@ root.render(
       </Provider>
     </BrowserRouter>
   </React.StrictMode>
+  </ErrorBoundary>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
